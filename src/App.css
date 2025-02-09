@@ -1,0 +1,122 @@
+/* 🔹 Fondo general de la app */
+body {
+  background-color: white;  /* Fondo blanco */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+/* 🔹 Contenedor principal */
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Estilos para los botones generales */
+button {
+  background-color: #007BFF;  /* Azul */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+/* 🔹 Efecto cuando pasas el mouse sobre un botón */
+button:hover {
+  background-color: #0056b3; /* Azul más oscuro */
+}
+
+/* 🔹 Botón especial para eliminar jugadores */
+.boton-eliminar {
+  background-color: #E53935; /* Rojo */
+}
+
+.boton-eliminar:hover {
+  background-color: #C62828; /* Rojo más oscuro */
+}
+
+/* 🔹 Botón especial para revivir jugadores */
+.boton-revivir {
+  background-color: #28A745; /* Verde */
+}
+
+.boton-revivir:hover {
+  background-color: #218838; /* Verde más oscuro */
+}
+
+/* 🔹 Lista de jugadores */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
+
+input[type="number"],
+input[type="text"],
+select {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  width: calc(100% - 40px);
+}
+
+img.role-image {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* 🔹 Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  li {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  input[type="number"],
+  input[type="text"],
+  select {
+    width: calc(100% - 20px);
+    font-size: 14px;
+  }
+
+  img.role-image {
+    max-width: 100%;
+  }
+}
+
+/* Centrar el botón debajo de la imagen */
+.btn-volver {
+  display: block;
+  margin: 20px auto;
+}
